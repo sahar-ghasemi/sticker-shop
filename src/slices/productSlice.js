@@ -8,7 +8,7 @@ const initialState = {
 
 export const fetchProducts=createAsyncThunk('products/fetch', async () => {
     try{
-        const response=await axios.get("http://localhoat:9000/stickers");
+        const response=await axios.get("http://localhost:9000/stickers");
         return response.data;
     }catch(err){
 console.log(err);
