@@ -1,0 +1,214 @@
+{
+    "stickers": [
+        {
+            "id": "01",
+            "title": "11",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "11.jpg"
+        },
+        {
+            "id": "02",
+            "title": "Android-4",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Android-4.jpg"
+        },
+        {
+            "id": "03",
+            "title": "Android-Gerd",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Android-Gerd.jpg"
+        },
+        {
+            "id": "04",
+            "title": "Android-Mechanic",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Android-Mechanic.jpg"
+        },
+        {
+            "id": "05",
+            "title": "Arch-linux",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Arch-linux.jpg"
+        },
+        {
+            "id": "06",
+            "title": "Bash",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Bash.jpg"
+        },
+        {
+            "id": "07",
+            "title": "Catch",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Catch.jpg"
+        },
+        {
+            "id": "08",
+            "title": "Clean-Code",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Clean-Code.jpg"
+        },
+        {
+            "id": "09",
+            "title": "Code-Coffee-Repeat",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Code-Coffee-Repeat.jpg"
+        },
+        {
+            "id": "10",
+            "title": "Coffee-to-Code",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Coffee-to-Code.jpg"
+        },
+        {
+            "id": "11",
+            "title": "Coffee-Script",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Coffee-Script.jpg"
+        },
+        {
+            "id": "12",
+            "title": "Coffe-to-Code",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Coffe-to-Code.jpg"
+        },
+        {
+            "id": "13",
+            "title": "Coffee",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Coffee.jpg"
+        },
+        {
+            "id": "14",
+            "title": "CSS-to-HTML",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "CSS-to-HTML.jpg"
+        },
+        {
+            "id": "15",
+            "title": "CSS",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "CSS.jpg"
+        },
+        {
+            "id": "16",
+            "title": "Developer",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Developer.jpg"
+        },
+        {
+            "id": "17",
+            "title": "Dont-Touch",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Dont-Touch.jpg"
+        },
+        {
+            "id": "18",
+            "title": "Emc2",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Emc2.jpg"
+        },
+        {
+            "id": "19",
+            "title": "False",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "False.jpg"
+        },
+        {
+            "id": "20",
+            "title": "Food-Sleep",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Food-Sleep.jpg"
+        },
+        {
+            "id": "21",
+            "title": "Geek-Girl",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Geek-Girl.jpg"
+        },
+        {
+            "id": "22",
+            "title": "Geek-Inside",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Geek-Inside.jpg"
+        },
+        {
+            "id": "23",
+            "title": "Geek",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Geek.jpg"
+        },
+        {
+            "id": "24",
+            "title": "Gem",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Gem.jpg"
+        },
+        {
+            "id": "25",
+            "title": "Github-Saye",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Github-Saye.jpg"
+        },
+        {
+            "id": "26",
+            "title": "Google-Geek",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Google-Geek.jpg"
+        },
+        {
+            "id": "27",
+            "title": "Hacker-Inside",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Hacker-Inside.jpg"
+        },
+        {
+            "id": "28",
+            "title": "Hello-World",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Hello-World.jpg"
+        },
+        {
+            "id": "29",
+            "title": "I-am-Programmer",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "I-am-Programmer.jpg"
+        },
+        {
+            "id": "30",
+            "title": "Js-Node",
+            "price": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed lobortis mi. Integer vel sem nunc. Integer mollis posuere sapien, vitae sagittis est egestas id. In semper convallis dapibus. Integer.",
+            "sticker": "Js-Node.jpg"
+        }
+    ]
+}
