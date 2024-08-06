@@ -1,11 +1,19 @@
+import { Helmet } from "react-helmet"
+import MainLayout from "./components/layouts/MainLayout"
+import Header from "./components/Header"
 
-function App() {
+const App=()=> {
 
   return (
-    <>
- <h1 className="text-3xl font-bold underline text-center mt-10">
-      Hello world!
-    </h1>    </>
+    <MainLayout>
+      <Helmet>
+        <title>sticker shop</title>        
+      </Helmet>
+      <div className="mx-auto max-w-6xl">
+        <Header/>
+      </div>
+    </MainLayout>
+
   )
 }
 
