@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet"
 import MainLayout from "./components/layouts/MainLayout"
 import Header from "./components/Header"
+import Products from "./components/Products"
 
 const App=()=> {
 
@@ -11,6 +12,7 @@ const App=()=> {
       </Helmet>
       <div className="mx-auto max-w-6xl">
         <Header/>
+        <Products/>
       </div>
     </MainLayout>
 
