@@ -1,7 +1,9 @@
 import { FaCartArrowDown } from "react-icons/fa";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const {cartItems}=useSelector((state)=>state.cart);
   return (
     <header className="border-b border-light sticky top-0 z-20 bg-white ">
       <div className="flex items-center justify-between max-w-full px-6 pb-2 pt-4 md:pt-6 mx-5">
@@ -14,9 +16,10 @@ const NavBar = () => {
         </Link>
         <Link to="/cart" className="relative ">
         <FaCartArrowDown size="2em" className="text-primary mr-2"/>
-          <div className="absolute top-0 right-0 text-xs bg-yellow text-gray-900 font-semibold rounded-full px-2 py-1 transform translate-x-4 -translate-y-2">
-            10
-          </div>
+        {cartItems.length===0?null:(   <div className="absolute top-0 right-0 text-xs bg-yellow text-gray-900 font-semibold rounded-full px-2 py-1 transform translate-x-4 -translate-y-2">
+           { cartItems.length}
+          </div>)}
+       
         </Link>
       </div>
     </header>
