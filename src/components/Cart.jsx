@@ -11,6 +11,7 @@ import {
   removeFromCart,
 } from "../slices/cartSlice";
 import { useEffect } from "react";
+import QtyInput from "./common/QtyInput";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -24,13 +25,6 @@ const Cart = () => {
   };
   const handleDecreaseCart = (item) => {
     dispatch(decreaseCart(item));
-  };
-  const handleQty = (e, item) => {
-    if (e.target.value < item.cartQty) {
-      handleDecreaseCart(item);
-    } else {
-      handleAddToCart(item);
-    }
   };
 
   const handleRemoveFromCart = (item) => {
@@ -80,19 +74,7 @@ const Cart = () => {
                       </Link>
                     </td>
                     <td className="px-6 py-4">
-                      <input
-                        type="number"
-                        value={item.cartQty}
-                        onChange={(e) => handleQty(e, item)}
-                        inputMode="numeric"
-                        id="variant-quantity"
-                        name="variant-quantity"
-                        min="1"
-                        step="1"
-                        className="text-gray-900 
-                                border border-gray-300 rounded-sm focus:border-light
-                                 focus:ring-light text-center w-10 sm:w-20"
-                      />
+                   <QtyInput decrementQty={()=>handleDecreaseCart(item)} incrementQty={()=>handleAddToCart(item)} qty={item.cartQty}/>
                     </td>
                     <td className="px-6 py-4">
                       <NumericFormat

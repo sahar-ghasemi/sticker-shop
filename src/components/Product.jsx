@@ -14,15 +14,14 @@ const Product = ({ product }) => {
           <div className="text-primary text-lg pt-2 px-2 font-semibold">
             {title}
           </div>
-          <div className="text-base text-gray-600 p-1 ">{description}</div>
-          <div className="flex justify-end items-center">
+          <div className="text-base text-gray-600 p-1 mb-10 ">{description}</div>
+          <div className="absolute bottom-0 right-0 mb-2 pl-8 pr-4 pb-1 pt-2 bg-lighter triangle">
             <NumericFormat
               value={priceDollars}
               prefix={"$ "}
               displayType={"text"}
               thousandSeparator={true}
-              className="text-dark font-semibold  bg-lighter rounded-md px-4 py-1"
-              
+              className="text-dark font-semibold  bg-lighter rounded-md px-4 py-1 "              
             />
           </div>
         </div>
