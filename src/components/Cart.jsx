@@ -4,14 +4,21 @@ import { Link } from "react-router-dom";
 import { NumericFormat } from "react-number-format";
 import { RxCross2 } from "react-icons/rx";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { addToCart, decreaseCart, getTotals } from "../slices/cartSlice";
+import {
+  addToCart,
+  decreaseCart,
+  getTotals,
+  removeFromCart,
+} from "../slices/cartSlice";
 import { useEffect } from "react";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  useEffect(()=>{dispatch(getTotals())},[cart,dispatch])
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [cart, dispatch]);
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
   };
@@ -24,6 +31,10 @@ const Cart = () => {
     } else {
       handleAddToCart(item);
     }
+  };
+
+  const handleRemoveFromCart = (item) => {
+    dispatch(removeFromCart(item));
   };
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,7 +96,7 @@ const Cart = () => {
                     </td>
                     <td className="px-6 py-4">
                       <NumericFormat
-                        value={item.price*item.cartQty/100}
+                        value={(item.price * item.cartQty) / 100}
                         prefix={"$ "}
                         displayType={"text"}
                         thousandSeparator={true}
@@ -94,28 +105,31 @@ const Cart = () => {
                     </td>
                     <td className="px-6 py-4">
                       <button aria-label="delete-item">
-                        <RxCross2 className="text-primary border border-primary rounded-sm hover:bg-lighter" />
+                        <RxCross2
+                          onClick={() => handleRemoveFromCart(item)}
+                          className="text-primary border border-primary rounded-sm hover:bg-lighter"
+                        />
                       </button>
                     </td>
                   </tr>
                 ))}
-      {
-        cart.cartTotalAmount===0?null:(
-          <tr className="text-center">
-            <td></td>
-            <td className=" text-primary font-semibold uppercase px-4 py-3">Total price:</td>
-            <td>
-            <NumericFormat
+                {cart.cartTotalAmount === 0 ? null : (
+                  <tr className="text-center">
+                    <td></td>
+                    <td className=" text-primary font-semibold uppercase px-4 py-3">
+                      Total price:
+                    </td>
+                    <td>
+                      <NumericFormat
                         value={cart.cartTotalAmount / 100}
                         prefix={"$ "}
                         displayType={"text"}
                         thousandSeparator={true}
                         className="font-semibold text-primary"
                       />
-            </td>
-          </tr>
-        )
-      }
+                    </td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>
