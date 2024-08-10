@@ -6,31 +6,35 @@ const initialState = {
     status:null
 }
 
-export const fetchProducts=createAsyncThunk('products/fetch', async () => {
-    try{
-        const response=await axios.get("http://localhost:9000/stickers");
-        return response.data;
-    }catch(err){
-console.log(err);
+
+export const fetchProducts = createAsyncThunk(
+    "products/fetchProducts",
+    async () => {
+        try {
+            const response = await axios.get("http://localhost:9000/stickers");
+            return response.data;
+        } catch (err) {
+            console.log(err);
+        }
     }
-})
+);
 
 const productsSlice=createSlice({
     name:"products",
     initialState,
     reducers:{},
-    extraReducers:{
-        [fetchProducts.pending]:(state)=>{
-            state.status="pending";
+    extraReducers: {
+        [fetchProducts.pending]: (state, action) => {
+            state.status = "pending";
         },
-        [fetchProducts.fulfilled]:(state,action)=>{
-            state.status="success",
-            state.items=action.payload;
+        [fetchProducts.fulfilled]: (state, action) => {
+            state.items = action.payload;
+            state.status = "success";
         },
-        [fetchProducts.rejected]:(state)=>{
-            state.status="rejected"
-        }
-    }
+        [fetchProducts.rejected]: (state, action) => {
+            state.status = "rejected";
+        },
+    },
 })
 
 export default productsSlice.reducer;
