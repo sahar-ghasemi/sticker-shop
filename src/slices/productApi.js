@@ -5,12 +5,15 @@ export const productApi=createApi({
     reducerPath:"productsApi",
     baseQuery:fetchBaseQuery({baseUrl:"http://localhost:9000/"}),
     endpoints:(builder)=>({
-        getAllProducts:builder.query({
+        getProducts:builder.query({
             query:()=>'stickers'
+        }),
+        getProguct:builder.query({
+            query:productId=>`stickers/${productId}`
         })
     })
 })
 
 export const {
-    useGetAllProductsQuery,
+    useGetProductsQuery,useGetProguctQuery
 }=productApi;
