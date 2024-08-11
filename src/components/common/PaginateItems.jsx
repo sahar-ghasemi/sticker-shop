@@ -12,6 +12,7 @@ const PaginateItems=({productPerPage,products,status})=>{
   
     const handlePageClick=(e)=>{
       const newOffset=e.selected*productPerPage;
+  document.documentElement.scrollTo({top:0, behavior:'smooth'});
       setItemOffset(newOffset);
     }
     return(
