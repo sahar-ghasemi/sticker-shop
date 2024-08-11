@@ -9,12 +9,14 @@ import {
   decreaseCart,
   getTotals,
   removeFromCart,
+  selectAll,
 } from "../slices/cartSlice";
 import { useEffect } from "react";
 import QtyInput from "./common/QtyInput";
 
 const Cart = () => {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector(selectAll);
+  const{cartTotalAmount}=useSelector(state=>state.cart)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -35,7 +37,7 @@ const Cart = () => {
       <Helmet>
         <title>Cart</title>
       </Helmet>
-      {cart.cartItems.length === 0 ? (
+      {cart.length === 0 ? (
         <p>Cart is empty</p>
       ) : (
         <>
@@ -53,7 +55,7 @@ const Cart = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-light">
-                {cart.cartItems.map((item) => (
+                {cart.map((item) => (
                   <tr
                     key={item.id}
                     className="text-gray-600 text-center hover:bg-gray-50"
@@ -95,7 +97,7 @@ const Cart = () => {
                     </td>
                   </tr>
                 ))}
-                {cart.cartTotalAmount === 0 ? null : (
+                {cartTotalAmount === 0 ? null : (
                   <tr className="text-center">
                     <td></td>
                     <td className=" text-primary font-semibold uppercase px-4 py-3">
@@ -103,7 +105,7 @@ const Cart = () => {
                     </td>
                     <td>
                       <NumericFormat
-                        value={cart.cartTotalAmount / 100}
+                        value={cartTotalAmount / 100}
                         prefix={"$ "}
                         displayType={"text"}
                         thousandSeparator={true}

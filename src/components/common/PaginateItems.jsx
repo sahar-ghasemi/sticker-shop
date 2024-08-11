@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Products from "../Products";
 import ReactPaginate from "react-paginate"
-import { BiSolidRightArrowSquare } from "react-icons/bi";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 
 const PaginateItems=({productPerPage,products,status})=>{
@@ -13,7 +12,6 @@ const PaginateItems=({productPerPage,products,status})=>{
   
     const handlePageClick=(e)=>{
       const newOffset=e.selected*productPerPage;
-  
       setItemOffset(newOffset);
     }
     return(
