@@ -1,23 +1,24 @@
 import { Helmet } from "react-helmet";
-import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { NumericFormat } from "react-number-format";
 import ProductForm from "./ProductForm";
+import { useGetProguctQuery } from "../slices/productApi";
 
 
 const ProductDetails=()=>{
     const {id}=useParams();
-    const product=useSelector((state)=>state.products.items.find(p=>p.id===id));
-    if(!product){
-        return <p>loading</p>
-    }
+    const {data:product,isSuccess}=useGetProguctQuery(id);
+ if(!product){
+    return <p>loading</p>
+ }
     const priceDollars=product.price/100;
 
     return(
         <div className="mt-4 flex flex-col align-middle justify-center
         items-center md:flex-row md:items-start 
         space-y-20 md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
-       <Helmet>
+  {isSuccess?(<>
+    <Helmet>
            <title>{product.title}</title>
        </Helmet>
 
@@ -49,6 +50,9 @@ const ProductDetails=()=>{
            
            <ProductForm product={product} />
        </div>
+  </>):(
+    <p> loading</p>
+  )}
    </div>
     )
 }

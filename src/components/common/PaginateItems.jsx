@@ -3,10 +3,13 @@ import Products from "../Products";
 import ReactPaginate from "react-paginate"
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 
-const PaginateItems=({productPerPage,products,status})=>{
+const PaginateItems=({productPerPage,products,isLoading,isSuccess})=>{
     const [itemOffset,setItemOffset]=useState(0);
     const endOffset=itemOffset+productPerPage;
   
+    if (!products) {
+      return <p>there is no products</p>;
+    }
     const currentProducts=products.slice(itemOffset,endOffset);
     const pageCount=Math.ceil(products.length/productPerPage);
   
@@ -17,7 +20,7 @@ const PaginateItems=({productPerPage,products,status})=>{
     }
     return(
       <>
-      <Products currentProducts={currentProducts} status={status}/>
+      <Products currentProducts={currentProducts} isLoading={isLoading} isSuccess={isSuccess} />
       <ReactPaginate
       containerClassName="flex justify-center items-center mt-8 mb-4"
       pageClassName="block border border-solid border-gray-100  w-10 h-10 flex items-center justify-center rounded-md mr-2 hover:bg-light hover:cursor-pointer"
